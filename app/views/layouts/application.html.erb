@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  <title>Sample App | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<ul>
+<li><a href = "home">home</a></li>&nbsp;
+<li><a href = "about">about us</a></li>&nbsp;
+<li><a href = "contact">contact us</a></li>&nbsp;
+<li><a href = "help">Need help?</a></li>&nbsp;
+</ul>
 <%= yield %>
 
 </body>
